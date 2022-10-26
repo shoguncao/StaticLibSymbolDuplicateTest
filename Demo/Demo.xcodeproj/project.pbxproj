@@ -30,6 +30,20 @@
 			remoteGlobalIDString = D38777722908D6C4007C80CE;
 			remoteInfo = Framework2;
 		};
+		D3E527DE2908D8D100F91C64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3E527C62908D76B00F91C64 /* Framework1.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D387775D2908D5F2007C80CE;
+			remoteInfo = Framework1;
+		};
+		D3E527E02908D8D100F91C64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3E527D82908D79500F91C64 /* Framework2.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D38777712908D6C4007C80CE;
+			remoteInfo = Framework2;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -118,6 +132,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				D3E527DF2908D8D100F91C64 /* PBXTargetDependency */,
+				D3E527E12908D8D100F91C64 /* PBXTargetDependency */,
 			);
 			name = Demo;
 			productName = Demo;
@@ -209,6 +225,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D3E527DF2908D8D100F91C64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Framework1;
+			targetProxy = D3E527DE2908D8D100F91C64 /* PBXContainerItemProxy */;
+		};
+		D3E527E12908D8D100F91C64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Framework2;
+			targetProxy = D3E527E02908D8D100F91C64 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D387778E2908D741007C80CE /* Main.storyboard */ = {
