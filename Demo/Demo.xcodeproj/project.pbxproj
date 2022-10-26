@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D34D04C62908DD6F009321FB /* Bridge.c in Sources */ = {isa = PBXBuildFile; fileRef = D34D04C52908DD6F009321FB /* Bridge.c */; };
+		D34D04C62908DD6F009321FB /* Bridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = D34D04C52908DD6F009321FB /* Bridge.mm */; };
+		D34D04C82908DF6C009321FB /* Framework1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E527CB2908D76B00F91C64 /* Framework1.framework */; };
+		D34D04C92908DF6C009321FB /* Framework2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E527DD2908D79500F91C64 /* Framework2.framework */; };
 		D38777892908D741007C80CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38777882908D741007C80CE /* AppDelegate.swift */; };
 		D387778B2908D741007C80CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D387778A2908D741007C80CE /* SceneDelegate.swift */; };
 		D387778D2908D741007C80CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D387778C2908D741007C80CE /* ViewController.swift */; };
@@ -50,7 +52,7 @@
 /* Begin PBXFileReference section */
 		D34D04C32908DD6E009321FB /* Demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Demo-Bridging-Header.h"; sourceTree = "<group>"; };
 		D34D04C42908DD6F009321FB /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
-		D34D04C52908DD6F009321FB /* Bridge.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Bridge.c; sourceTree = "<group>"; };
+		D34D04C52908DD6F009321FB /* Bridge.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Bridge.mm; sourceTree = "<group>"; };
 		D38777852908D741007C80CE /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D38777882908D741007C80CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D387778A2908D741007C80CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,12 +70,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D34D04C82908DF6C009321FB /* Framework1.framework in Frameworks */,
+				D34D04C92908DF6C009321FB /* Framework2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D34D04C72908DF6C009321FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D387777C2908D741007C80CE = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +92,7 @@
 				D3E527D82908D79500F91C64 /* Framework2.xcodeproj */,
 				D38777872908D741007C80CE /* Demo */,
 				D38777862908D741007C80CE /* Products */,
+				D34D04C72908DF6C009321FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,7 +111,7 @@
 				D387778A2908D741007C80CE /* SceneDelegate.swift */,
 				D387778C2908D741007C80CE /* ViewController.swift */,
 				D34D04C42908DD6F009321FB /* Bridge.h */,
-				D34D04C52908DD6F009321FB /* Bridge.c */,
+				D34D04C52908DD6F009321FB /* Bridge.mm */,
 				D387778E2908D741007C80CE /* Main.storyboard */,
 				D38777912908D742007C80CE /* Assets.xcassets */,
 				D38777932908D742007C80CE /* LaunchScreen.storyboard */,
@@ -228,7 +240,7 @@
 			files = (
 				D387778D2908D741007C80CE /* ViewController.swift in Sources */,
 				D38777892908D741007C80CE /* AppDelegate.swift in Sources */,
-				D34D04C62908DD6F009321FB /* Bridge.c in Sources */,
+				D34D04C62908DD6F009321FB /* Bridge.mm in Sources */,
 				D387778B2908D741007C80CE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
