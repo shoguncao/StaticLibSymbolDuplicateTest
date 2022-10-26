@@ -3,7 +3,9 @@
 //
 
 #include "functions.h"
+#include "stdio.h"
 
 int add(int a, int b) {
+    printf("call framework2 add\n");
     return a + b;
 }

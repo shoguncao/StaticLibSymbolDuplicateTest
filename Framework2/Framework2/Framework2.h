@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Frameworks/functions.h>
+#import <Framework2/functions.h>
 
 //! Project version number for Framework2.
 FOUNDATION_EXPORT double Framework2VersionNumber;
