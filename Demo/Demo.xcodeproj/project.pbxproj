@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D34D04C62908DD6F009321FB /* Bridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = D34D04C52908DD6F009321FB /* Bridge.mm */; };
-		D34D04C82908DF6C009321FB /* Framework1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E527CB2908D76B00F91C64 /* Framework1.framework */; };
-		D34D04C92908DF6C009321FB /* Framework2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E527DD2908D79500F91C64 /* Framework2.framework */; };
+		D34D04CD2908E60A009321FB /* Framework1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E527CB2908D76B00F91C64 /* Framework1.framework */; };
+		D34D04CE2908E614009321FB /* Framework2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E527DD2908D79500F91C64 /* Framework2.framework */; };
 		D38777892908D741007C80CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38777882908D741007C80CE /* AppDelegate.swift */; };
 		D387778B2908D741007C80CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D387778A2908D741007C80CE /* SceneDelegate.swift */; };
 		D387778D2908D741007C80CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D387778C2908D741007C80CE /* ViewController.swift */; };
@@ -70,8 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D34D04C82908DF6C009321FB /* Framework1.framework in Frameworks */,
-				D34D04C92908DF6C009321FB /* Framework2.framework in Frameworks */,
+				D34D04CE2908E614009321FB /* Framework2.framework in Frameworks */,
+				D34D04CD2908E60A009321FB /* Framework1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +415,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shoguncao.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -446,6 +448,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shoguncao.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

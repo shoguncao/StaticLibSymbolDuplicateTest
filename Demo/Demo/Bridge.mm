@@ -7,7 +7,8 @@
 
 #include "Bridge.h"
 #import <Framework1/Framework1.h>
+#import <Framework2/Framework2.h>
 
 int bridge_add(int a, int b) {
-    return add(a, b);
+    return add2(a, b);
 }
