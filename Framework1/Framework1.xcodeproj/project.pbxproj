@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		D38777622908D5F2007C80CE /* Framework1.h in Headers */ = {isa = PBXBuildFile; fileRef = D38777612908D5F2007C80CE /* Framework1.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3E527E42908D9FA00F91C64 /* functions.h in Headers */ = {isa = PBXBuildFile; fileRef = D3E527E22908D9FA00F91C64 /* functions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3E527E52908D9FA00F91C64 /* functions.c in Sources */ = {isa = PBXBuildFile; fileRef = D3E527E32908D9FA00F91C64 /* functions.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D387775E2908D5F2007C80CE /* Framework1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Framework1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D38777612908D5F2007C80CE /* Framework1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Framework1.h; sourceTree = "<group>"; };
+		D3E527E22908D9FA00F91C64 /* functions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = functions.h; sourceTree = "<group>"; };
+		D3E527E32908D9FA00F91C64 /* functions.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = functions.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +50,8 @@
 			isa = PBXGroup;
 			children = (
 				D38777612908D5F2007C80CE /* Framework1.h */,
+				D3E527E22908D9FA00F91C64 /* functions.h */,
+				D3E527E32908D9FA00F91C64 /* functions.c */,
 			);
 			path = Framework1;
 			sourceTree = "<group>";
@@ -57,6 +63,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3E527E42908D9FA00F91C64 /* functions.h in Headers */,
 				D38777622908D5F2007C80CE /* Framework1.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -129,6 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3E527E52908D9FA00F91C64 /* functions.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

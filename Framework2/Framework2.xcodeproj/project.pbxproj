@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		D38777762908D6C4007C80CE /* Framework2.h in Headers */ = {isa = PBXBuildFile; fileRef = D38777752908D6C4007C80CE /* Framework2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3E527E82908DA6300F91C64 /* functions.c in Sources */ = {isa = PBXBuildFile; fileRef = D3E527E62908DA6300F91C64 /* functions.c */; };
+		D3E527E92908DA6300F91C64 /* functions.h in Headers */ = {isa = PBXBuildFile; fileRef = D3E527E72908DA6300F91C64 /* functions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D38777722908D6C4007C80CE /* Framework2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Framework2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D38777752908D6C4007C80CE /* Framework2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Framework2.h; sourceTree = "<group>"; };
+		D3E527E62908DA6300F91C64 /* functions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = functions.c; sourceTree = "<group>"; };
+		D3E527E72908DA6300F91C64 /* functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = functions.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +50,8 @@
 			isa = PBXGroup;
 			children = (
 				D38777752908D6C4007C80CE /* Framework2.h */,
+				D3E527E72908DA6300F91C64 /* functions.h */,
+				D3E527E62908DA6300F91C64 /* functions.c */,
 			);
 			path = Framework2;
 			sourceTree = "<group>";
@@ -57,6 +63,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3E527E92908DA6300F91C64 /* functions.h in Headers */,
 				D38777762908D6C4007C80CE /* Framework2.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -129,6 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3E527E82908DA6300F91C64 /* functions.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
