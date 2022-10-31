@@ -8,7 +8,7 @@
 extern "C" {
 #endif
 
-int add(int a, int b);
+int add2(int a, int b);
 
 #ifdef __cplusplus
 }

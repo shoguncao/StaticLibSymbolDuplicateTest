@@ -9,3 +9,7 @@ int add(int a, int b) {
     printf("call framework1 add\n");
     return a + b;
 }
+
+int add1(int a, int b) {
+    return add(a, b);
+}
