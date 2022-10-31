@@ -5,7 +5,7 @@
 #include "functions.h"
 #include "stdio.h"
 
-int add(int a, int b) {
+static int add(int a, int b) {
     printf("call framework1 add\n");
     return a + b;
 }
