@@ -12,7 +12,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        let pp = bridge_add(2, 3)
+        var pp = bridge_add1(2, 3)
+        print("pp: \(pp)")
+        pp = bridge_add2(2, 3)
         print("pp: \(pp)")
     }
 

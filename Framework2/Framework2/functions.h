@@ -8,7 +8,7 @@
 extern "C" {
 #endif
 
-int add2(int a, int b);
+__attribute__((visibility("default"))) int add2(int a, int b);
 
 #ifdef __cplusplus
 }

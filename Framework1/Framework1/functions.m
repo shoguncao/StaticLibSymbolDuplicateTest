@@ -4,9 +4,11 @@
 
 #include "functions.h"
 #include "stdio.h"
+#import "AnObject.h"
 
-static int add(int a, int b) {
+int add(int a, int b) {
     printf("call framework1 add\n");
+    [[AnObject alloc] init];
     return a + b;
 }
 

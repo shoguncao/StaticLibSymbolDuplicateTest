@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CAD050C2B6B3ADD009A6DAA /* AnObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CAD050A2B6B3ADD009A6DAA /* AnObject.h */; };
+		1CAD050D2B6B3ADD009A6DAA /* AnObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CAD050B2B6B3ADD009A6DAA /* AnObject.m */; };
 		D38777762908D6C4007C80CE /* Framework2.h in Headers */ = {isa = PBXBuildFile; fileRef = D38777752908D6C4007C80CE /* Framework2.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3E527E82908DA6300F91C64 /* functions.c in Sources */ = {isa = PBXBuildFile; fileRef = D3E527E62908DA6300F91C64 /* functions.c */; };
+		D3E527E82908DA6300F91C64 /* functions.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E527E62908DA6300F91C64 /* functions.m */; };
 		D3E527E92908DA6300F91C64 /* functions.h in Headers */ = {isa = PBXBuildFile; fileRef = D3E527E72908DA6300F91C64 /* functions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1CAD050A2B6B3ADD009A6DAA /* AnObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnObject.h; sourceTree = "<group>"; };
+		1CAD050B2B6B3ADD009A6DAA /* AnObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnObject.m; sourceTree = "<group>"; };
 		D38777722908D6C4007C80CE /* Framework2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Framework2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D38777752908D6C4007C80CE /* Framework2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Framework2.h; sourceTree = "<group>"; };
-		D3E527E62908DA6300F91C64 /* functions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = functions.c; sourceTree = "<group>"; };
+		D3E527E62908DA6300F91C64 /* functions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = functions.m; sourceTree = "<group>"; };
 		D3E527E72908DA6300F91C64 /* functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = functions.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -51,7 +55,9 @@
 			children = (
 				D38777752908D6C4007C80CE /* Framework2.h */,
 				D3E527E72908DA6300F91C64 /* functions.h */,
-				D3E527E62908DA6300F91C64 /* functions.c */,
+				D3E527E62908DA6300F91C64 /* functions.m */,
+				1CAD050A2B6B3ADD009A6DAA /* AnObject.h */,
+				1CAD050B2B6B3ADD009A6DAA /* AnObject.m */,
 			);
 			path = Framework2;
 			sourceTree = "<group>";
@@ -64,6 +70,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3E527E92908DA6300F91C64 /* functions.h in Headers */,
+				1CAD050C2B6B3ADD009A6DAA /* AnObject.h in Headers */,
 				D38777762908D6C4007C80CE /* Framework2.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,7 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3E527E82908DA6300F91C64 /* functions.c in Sources */,
+				D3E527E82908DA6300F91C64 /* functions.m in Sources */,
+				1CAD050D2B6B3ADD009A6DAA /* AnObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +278,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GENERATE_INFOPLIST_FILE = YES;
-				GENERATE_MASTER_OBJECT_FILE = NO;
+				GENERATE_MASTER_OBJECT_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -281,7 +289,7 @@
 				);
 				MACH_O_TYPE = staticlib;
 				MARKETING_VERSION = 1.0;
-				OTHER_CFLAGS = "";
+				OTHER_CFLAGS = "-fvisibility=hidden";
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.Framework2;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -304,7 +312,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GENERATE_INFOPLIST_FILE = YES;
-				GENERATE_MASTER_OBJECT_FILE = NO;
+				GENERATE_MASTER_OBJECT_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -315,7 +323,7 @@
 				);
 				MACH_O_TYPE = staticlib;
 				MARKETING_VERSION = 1.0;
-				OTHER_CFLAGS = "";
+				OTHER_CFLAGS = "-fvisibility=hidden";
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.Framework2;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
