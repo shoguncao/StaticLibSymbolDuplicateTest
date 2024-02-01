@@ -4,7 +4,7 @@
 
 #include "functions.h"
 #include "stdio.h"
-#import "AnObject.h"
+#import <Framework2/AnObject.h>
 
 int add(int a, int b) {
     printf("call framework2 add\n");

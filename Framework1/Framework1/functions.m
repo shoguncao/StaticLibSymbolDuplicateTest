@@ -4,11 +4,12 @@
 
 #include "functions.h"
 #include "stdio.h"
-#import "AnObject.h"
+#import <Framework1/AnObject.h>
 
 int add(int a, int b) {
     printf("call framework1 add\n");
-    [[AnObject alloc] init];
+    AnObject *obj = [[AnObject alloc] init];
+    [obj test];
     return a + b;
 }
 

@@ -6,4 +6,6 @@
 
 @interface AnObject : NSObject
 
+- (void)test;
+
 @end

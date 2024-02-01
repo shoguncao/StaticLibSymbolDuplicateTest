@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CAD05152B6B4577009A6DAA /* Framework1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E527CB2908D76B00F91C64 /* Framework1.framework */; };
+		1CAD05162B6B4577009A6DAA /* Framework1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D3E527CB2908D76B00F91C64 /* Framework1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1CAD05182B6B45A3009A6DAA /* Framework2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E527DD2908D79500F91C64 /* Framework2.framework */; };
+		1CAD05192B6B45A3009A6DAA /* Framework2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D3E527DD2908D79500F91C64 /* Framework2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D34D04C62908DD6F009321FB /* Bridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = D34D04C52908DD6F009321FB /* Bridge.mm */; };
-		D34D04CD2908E60A009321FB /* Framework1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E527CB2908D76B00F91C64 /* Framework1.framework */; };
-		D34D04CE2908E614009321FB /* Framework2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E527DD2908D79500F91C64 /* Framework2.framework */; };
 		D38777892908D741007C80CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38777882908D741007C80CE /* AppDelegate.swift */; };
 		D387778B2908D741007C80CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D387778A2908D741007C80CE /* SceneDelegate.swift */; };
 		D387778D2908D741007C80CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D387778C2908D741007C80CE /* ViewController.swift */; };
@@ -49,6 +51,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1CAD05172B6B4577009A6DAA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1CAD05192B6B45A3009A6DAA /* Framework2.framework in Embed Frameworks */,
+				1CAD05162B6B4577009A6DAA /* Framework1.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		D34D04C32908DD6E009321FB /* Demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Demo-Bridging-Header.h"; sourceTree = "<group>"; };
 		D34D04C42908DD6F009321FB /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
@@ -70,8 +87,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D34D04CE2908E614009321FB /* Framework2.framework in Frameworks */,
-				D34D04CD2908E60A009321FB /* Framework1.framework in Frameworks */,
+				1CAD05182B6B45A3009A6DAA /* Framework2.framework in Frameworks */,
+				1CAD05152B6B4577009A6DAA /* Framework1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +164,7 @@
 				D38777812908D741007C80CE /* Sources */,
 				D38777822908D741007C80CE /* Frameworks */,
 				D38777832908D741007C80CE /* Resources */,
+				1CAD05172B6B4577009A6DAA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

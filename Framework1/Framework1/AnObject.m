@@ -15,4 +15,8 @@
     return self;
 }
 
+- (void)test {
+    NSLog(@"call framework1 test");
+}
+
 @end
